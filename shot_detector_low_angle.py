@@ -545,6 +545,6 @@ if __name__ == "__main__":
     # You can specify different model and video paths
     detector = ShotDetectorLowAngle(
         model_path="300images-yolom11/best.pt",  # Update this path to your trained model
-        video_path="sample180s_video-1.mp4",    # Update this path to your test video
+        video_path="sample180s_video-2.mp4",    # Update this path to your test video
         save_output=True                         # Set to True to save analyzed video
     )
