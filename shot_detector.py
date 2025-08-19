@@ -12,10 +12,10 @@ class ShotDetector:
     def __init__(self):
         # Load the YOLO model created from main.py - change text to your relative path
         self.overlay_text = "Waiting..."
-        self.model = YOLO("basketball_model_trained/best.pt")
+        self.model = YOLO("1200images-yolon11/best.pt")
         
         # Uncomment this line to accelerate inference. Note that this may cause errors in some setups.
-        #self.model.half()
+        # self.model.half()
         
         self.class_names = ['Basketball', 'Basketball Hoop']
         self.device = get_device()
