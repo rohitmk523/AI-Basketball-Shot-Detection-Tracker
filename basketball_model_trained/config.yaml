@@ -1,0 +1,7 @@
+
+train: /content/drive/MyDrive/Uball-shot-detection.v2i.yolov11/train/images
+val: /content/drive/MyDrive/Uball-shot-detection.v2i.yolov11/valid/images
+test: /content/drive/MyDrive/Uball-shot-detection.v2i.yolov11/test/images
+
+nc: 2
+names: ['Basketball', 'Basketball Hoop']

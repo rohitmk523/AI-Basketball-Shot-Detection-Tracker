@@ -12,7 +12,7 @@ class ShotDetector:
     def __init__(self):
         # Load the YOLO model created from main.py - change text to your relative path
         self.overlay_text = "Waiting..."
-        self.model = YOLO("best.pt")
+        self.model = YOLO("basketball_model_trained/best.pt")
         
         # Uncomment this line to accelerate inference. Note that this may cause errors in some setups.
         #self.model.half()
@@ -23,7 +23,7 @@ class ShotDetector:
         # self.cap = cv2.VideoCapture(0)
 
         # Use video - replace text with your video path
-        self.cap = cv2.VideoCapture("video_test_5.mp4")
+        self.cap = cv2.VideoCapture("sample180s_video-1.mp4")
 
         self.ball_pos = []  # array of tuples ((x_pos, y_pos), frame count, width, height, conf)
         self.hoop_pos = []  # array of tuples ((x_pos, y_pos), frame count, width, height, conf)
